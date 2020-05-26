@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="Chart.bundle.min.js"></script>
+    <title>POOL STATUS</title>
+</head>
+<body>
+<div class="left-side">
+    <h1>POOL STATUS</h1>
+    <div class="selection" id="selection">
+        <div class="column pool-values active" id="pool-Values" onclick="switchGraph(this.id)">Pool Werte</div>
+        <div class="column control" id="control" onclick="switchGraph(this.id)">Kontrolle</div>
+        <div class="column settings" id="settings" onclick="switchGraph(this.id)">Einstellungen</div>
+    </div>
+    <hr class="hr" id="header-indikator">
+    <div class="main-notification">
+        <p>Kein Eingreifen erforderlich</p>
+    </div>
+
+    <div class="main">
+        <p>Chemikalien</p>
+        <div class="box">
+            <div class="left boxes" id="chlor" onclick="switchGraph(this.id)">
+                <div class="icon">
+                    <div class="icon-div">
+                        <h2>--</h2>
+                        <p>mg/l</p>
+                    </div>
+                </div>
+                <div class="text">Chlor</div>
+            </div>
+            <div class="center boxes" id="ph" onclick="switchGraph(this.id)">
+                <div class="icon">
+                    <div class="icon-div">
+                        <h2>--</h2>
+                        <p>pH</p>
+                    </div>
+                </div>
+                <div class="text">Ph</div>
+            </div>
+            <div class="right boxes" id="conductiv" onclick="switchGraph(this.id)">
+                <div class="icon">
+                    <div class="icon-div">
+                        <h2>--</h2>
+                        <p>mV</p>
+                    </div>
+                </div>
+                <div class="text">Leitfähig</div>
+            </div>
+        </div>
+
+        <p>Temperaturen</p>
+        <div class="box">
+            <hr class="active-indikator" id="active-indikator">
+            <div class="left boxes" id="pool" onclick="switchGraph(this.id); check(this.id)">
+                <div class="icon">
+                    <div class="b-b"></div>
+                    <div class="c-b"></div>
+                    <div class="icon-div">
+                        <h2 id="temperaturec">20</h2>
+                        <p>Grad</p>
+                    </div>
+                </div>
+                <div class="text" id="pool-id">Pool</div>
+            </div>
+            <div class="center boxes" id="outdoor" onclick="switchGraph(this.id); check(this.id)">
+                <div class="icon">
+                    <div class="b-b"></div>
+                    <div class="c-b"></div>
+                    <div class="icon-div">
+                        <h2 id="temperatures">26</h2>
+                        <p>Grad</p>
+                    </div>
+                </div>
+                <div class="text">Draußen</div>
+            </div>
+            <div class="right boxes" id="solar" onclick="switchGraph(this.id); check(this.id)">
+                <div class="icon">
+                    <div class="icon-div">
+                        <h2>--</h2>
+                        <p>Grad</p>
+                    </div>
+                </div>
+                <div class="text">Solar</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="right-side" id="outdoor-value">
+    <div class="header">
+        <div>
+            <h1>Außentemperatur</h1>
+            <p>Aktuelle Umgebungstemperatur</p>
+        </div>
+        <div class="header-value">
+            <div class="number-value">
+                <h1>0</h1>
+                <p>Grad</p>
+            </div>
+            <hr>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <div class="graph">
+        <canvas id="outdoor-chart"></canvas>
+    </div>
+    <hr>
+    <div class="slider">
+        <div class="inner-slider">
+            <div class="left">Zu kalt</div>
+            <div class="center">Perfekt</div>
+            <div class="right">Zu warm</div>
+            <div class="main-slider">
+                <div class="sub-slider"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="notification">
+        <h2>Daten werden berechnet</h2>
+        <hr>
+        <p>Texte sind noch in Bearbeitung | coming soon</p>
+    </div>
+</div>
+<div class="right-side" id="pool-value">
+
+    <div class="header">
+        <div>
+            <h1>Pool Temperatur</h1>
+            <p>Aktuelle Wassertemperatur </p>
+        </div>
+        <div class="header-value">
+            <div class="number-value">
+                <h1 id="buhub">0</h1>
+                <p>Grad</p>
+            </div>
+            <hr>
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <div class="graph">
+        <canvas id="pool-chart"></canvas>
+    </div>
+    <hr>
+    <div class="slider">
+        <div class="inner-slider">
+            <div class="left">Zu kalt</div>
+            <div class="center">Perfekt</div>
+            <div class="right">Zu warm</div>
+            <div class="main-slider">
+                <div class="sub-slider" id="sub-slider"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="notification">
+        <h2 id="hubu">Daten werden berechnet</h2>
+        <hr>
+        <p>Texte sind noch in Bearbeitung | coming soon</p>
+    </div>
+</div>
+
+<div class="right-side" id="control-value">
+    <div class="header">
+        <div>
+            <h1>Kontrolle</h1>
+            <p>Geräteeinstellungen</p>
+        </div>
+    </div>
+
+    <hr>
+    <div class="slider">
+        <div class="text-control">Pumpe</div>
+        <div class="timer">00:00:00</div>
+        <div class="onoffswitch">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0" checked>
+            <label class="onoffswitch-label" for="myonoffswitch"></label>
+        </div>
+    </div>
+    <div class="slider sec">
+        <div class="text-control">Zulauf Solar</div>
+        <div class="timer">00:00:00</div>
+        <div class="onoffswitch">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2" tabindex="0" checked>
+            <label class="onoffswitch-label" for="myonoffswitch2"></label>
+        </div>
+    </div>
+    <div class="slider thir">
+        <div class="text-control">Autonom</div>
+
+        <div class="onoffswitch">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch3" tabindex="0" checked>
+            <label class="onoffswitch-label" for="myonoffswitch3"></label>
+        </div>
+    </div>
+    <div class="slider fiv">
+        <div class="text-control">Ambient light</div>
+    </div>
+    <div class="slider six">
+        <div class="text-control">more...</div>
+    </div>
+</div>
+
+<script src="./lines.js"></script>
+<script src="./intercation.js"></script>
+</body>
+</html>
