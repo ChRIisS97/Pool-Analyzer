@@ -19,7 +19,7 @@ Chart.controllers.line = Chart.controllers.line.extend({
 //On Page load show graphs
 window.onload = function() {
     //console.log(new Date().toLocaleTimeString());
-    showGraph(5,21,1);
+    showGraph(5);
     showGraph2(5);
 };
 
@@ -123,7 +123,12 @@ function showGraph2() {
         values.push(arguments[i]);
         idealValue2.push(arguments[i]);
     }
+    
     var ctx = document.getElementById("outdoor-chart").getContext('2d');
+    var gradient = ctx.createLinearGradient(0, 0, 0, 255);
+    gradient.addColorStop(0, 'rgba(39,124,135,0.35)');
+    gradient.addColorStop(1, 'rgba(13,166,188,0)');
+    
     var chart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -131,8 +136,8 @@ function showGraph2() {
             datasets: [{
                 label: "Außentemperatur",
                 fill: true,	//Try with true
-                borderColor: '#00afa6',
-                backgroundColor: 'rgba(0,175,166,0.25)',
+                borderColor: '#007ea5',
+                backgroundColor: gradient,
                 data: values2,
             },{
                 label: 'Außentemperatur',
