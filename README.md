@@ -1,42 +1,49 @@
-# Pool-Analyzer
+<br><br><br> 
+<h4 align="center" style="font-weight:100">Welcome to</h4>
+<h1 align="center" style="font-weight:bold; color: #3498db;">ODESZA</h1>
+<br><br><br><br><br><br> 
 
-A small project that takes care of your pool and informs you how your pool is doing. That means you get information about chlorine content, pH-value, conductivity of the water and more.. .
-
-![alt text](https://github.com/ChRIisS97/Pool-Analyzer/blob/master/Screenshot%20(32).png)
-**Working prototyp Version 0.4**
-
+![alt text](https://github.com/ChRIisS97/Pool-Analyzer/blob/master/Home.png)
+![alt text](https://github.com/ChRIisS97/Pool-Analyzer/blob/master/control.png)
+**Working prototyp Version 0.5**
 
 # Description
-The idea was born because my dad always measured the chlorine content and pH value by hand. This means small tablets that change colour on contact with the water. With this you could estimate how much you have to add to bring the values back to the optimal range.  Unfortunately this is not very efficient and accurate. Hence this small project with an esp32 and the Internet of Things
+The idea was born because my dad always measured the chlorine content and pH value by hand. This means small tablets that change colour on contact with the water. With this you could estimate how much you have to add to bring the values back to the optimal range.  Unfortunately this is not very efficient and accurate. Hence this small project with an esp32 and the Internet of Things.
+A small project that takes care of your pool and informs you how your pool is doing. That means you get information about chlorine content, pH-value, conductivity of the water and more.. .
 
-still in process and can receive changes but hope it will give you a small impression
+**still in process and receive changes**
 
-
-# What do you need
-
+# Built With
 ```
-> Esp32 or 8266 or some other boards with wifi
-> The Arduino IDE
-> Some Sensor like the temperaturesensor DS18B20
-> The SPIFFS filesystem 
+- Javascript 
+- HTML & CSS
+- ChartJS for visualisation
+- Arduino IDE
 ```
 
+# Prerequisites
+- [Esp32 or 8266](https://www.amazon.de/s?k=esp32&ref=nb_sb_noss) Your brain 
+- [The Arduino IDE](https://www.arduino.cc/en/Main/Software) The software
+- [Some Sensor]() like the temperaturesensor DS18B20
+- [The SPIFFS](https://randomnerdtutorials.com/esp32-web-server-spiffs-spi-flash-file-system/) filesystem for HTML, CSS, Javascript
+- [Outdoor case]() Against water and rain
 
-# My Sensors for this project
-
-- Ph Sensor [link here](https://www.dfrobot.com/product-1110.html)
-- Conductivity Sensor [link here](https://www.dfrobot.com/product-1123.html)
-- Chlorine Sensor [link here](https://www.dfrobot.com/product-1071.html)
-- 2 Temperature Sensors [link here](https://www.dfrobot.com/product-689.html)
-- voltage Sensor for autarkic operation [link here](https://www.dfrobot.com/search-voltage.html)
-
-# instructions 
-
+# Instructions 
 ```
-> Download files
-> Load the SPIFFS filesystem to your Arduino IDE
-> Creat a new folder with the name data in the filesystem for your HTML & CSS & JS files
-> Load the Arduino file near to yor data folder and upload to your Esp 
+> Download Zip
+> Load your HTML, CSS & JS files in the SPIFFS data folder.
+> Load the Arduino file near to your data folder and upload your .ino file to the Esp 
 > Check your Serial Monitor and type the IP adress in your Browser
 ```
+
+# Authors
+> **Christopher Himann** - *Initial work* - 
+
+
+# License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+
+# Acknowledgments
+inspiration : [ICO](https://ondilo.com/en/) or [Hydropi](https://myhydropi.com/pool-monitor)
 
