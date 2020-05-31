@@ -6,11 +6,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="Chart.bundle.min.js"></script>
+
+    <link rel="shortcut icon" href="Favi.ico">
+    <link rel="icon" type="image/png" href="Favi48x48.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="Favi96x96.png" sizes="96x96">
+    <link rel="apple-touch-icon" sizes="180x180" href="Favi180x180.png">
     <title>POOL STATUS</title>
 </head>
 <body>
 <div class="left-side">
-    <h1>POOL STATUS</h1>
+    <h1>POOL STATUS</h1><p class="timer-sub" id="timer-sub">00:00:00</p>
     <div class="selection" id="selection">
         <div class="column pool-values active" id="pool-Values" onclick="switchGraph(this.id)">Pool Werte</div>
         <div class="column control" id="control" onclick="switchGraph(this.id)">Kontrolle</div>
@@ -59,9 +64,9 @@
             <div class="left boxes" id="pool" onclick="switchGraph(this.id); check(this.id)">
                 <div class="icon">
                     <div class="b-b"></div>
-                    <div class="c-b"></div>
+                    <div class="c-b"><a>PO</a></div>
                     <div class="icon-div">
-                        <h2 id="temperaturec">20</h2>
+                        <h2 id="temperaturec">21.25</h2>
                         <p>Grad</p>
                     </div>
                 </div>
@@ -70,9 +75,9 @@
             <div class="center boxes" id="outdoor" onclick="switchGraph(this.id); check(this.id)">
                 <div class="icon">
                     <div class="b-b"></div>
-                    <div class="c-b"></div>
+                    <div class="c-b"><a>OU</a></div>
                     <div class="icon-div">
-                        <h2 id="temperatures">26</h2>
+                        <h2 id="temperatures">35.57</h2>
                         <p>Grad</p>
                     </div>
                 </div>
@@ -163,7 +168,7 @@
     <div class="notification">
         <h2 id="hubu">Daten werden berechnet</h2>
         <hr>
-        <p>Texte sind noch in Bearbeitung | coming soon</p>
+        <p id="hubu-text">Texte sind noch in Bearbeitung | coming soon</p>
     </div>
 </div>
 
@@ -178,17 +183,17 @@
     <hr>
     <div class="slider">
         <div class="text-control">Pumpe</div>
-        <div class="timer">00:00:00</div>
+        <div class="timer" id="timer">00:00:00</div>
         <div class="onoffswitch">
-            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0" checked>
+            <input onclick="counter()" type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0">
             <label class="onoffswitch-label" for="myonoffswitch"></label>
         </div>
     </div>
     <div class="slider sec">
         <div class="text-control">Zulauf Solar</div>
-        <div class="timer">00:00:00</div>
+        <div class="timer" id="timer2">00:00:00</div>
         <div class="onoffswitch">
-            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2" tabindex="0" checked>
+            <input onclick="counter2()" type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2" tabindex="0">
             <label class="onoffswitch-label" for="myonoffswitch2"></label>
         </div>
     </div>
@@ -196,15 +201,25 @@
         <div class="text-control">Autonom</div>
 
         <div class="onoffswitch">
-            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch3" tabindex="0" checked>
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch3" tabindex="0">
             <label class="onoffswitch-label" for="myonoffswitch3"></label>
         </div>
     </div>
     <div class="slider fiv">
         <div class="text-control">Ambient light</div>
+
+        <div class="onoffswitch">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch4" tabindex="0">
+            <label class="onoffswitch-label" for="myonoffswitch4"></label>
+        </div>
     </div>
     <div class="slider six">
-        <div class="text-control">more...</div>
+        <div class="text-control">Winter modus</div>
+
+        <div class="onoffswitch">
+            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch5" tabindex="0">
+            <label class="onoffswitch-label" for="myonoffswitch5"></label>
+        </div>
     </div>
 </div>
 
