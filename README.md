@@ -1,8 +1,10 @@
 <h1 align="center" style="font-weight:bold; color: #3498db;">New Design</h1>
+
 ![alt text](https://github.com/ChRIisS97/Pool-Analyzer/blob/master/Screenshot%20(36).png)
 updates are coming
 
 <h1 align="center" style="font-weight:bold; color: #3498db;">Old Design</h1>
+
 ![alt text](https://github.com/ChRIisS97/Pool-Analyzer/blob/master/Home.png)
 ![alt text](https://github.com/ChRIisS97/Pool-Analyzer/blob/master/control.png)
 **Working prototyp Version 0.5**
