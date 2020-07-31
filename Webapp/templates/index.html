@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>POOL STATUS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/stylesheet.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <!--<script src="../../dist/jquery.ripples.js"></script>-->
+    <script src="../static/DoSomething.js"></script>
+</head>
+<body>
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">POOL STATUS</label>
+    <label id="status">Good morning, your pool Looks very good!</label>
+    <ul>
+        <li><a id="values" class="active" onclick="f(this.id)">VALUES</a><span id="bl" class="underscore"></span></li>
+        <li><a id="control" onclick="f(this.id)">CONTROL</a><span id="blu" class="underscore"></span></li>
+        <li><a id="light" onclick="f(this.id)">LIGHT</a><span id="blu2" class="underscore"></span></li>
+    </ul>
+</nav>
+
+<div class="outer-box">
+    <div id="content">
+        <div class="first">
+            <h2>POOL</h2>
+            <h1 id="temperaturec">25.55</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="332" height="313"
+                 viewBox="0 0 332 313">
+                <defs>
+                    <style>
+                        .cls-1 {
+                            clip-path: url(#clip-iPhone_X_XS_11_Pro_71);
+                        }
+
+                        .cls-2 {
+                            opacity: 0.75;
+                        }
+
+                        .cls-3, .cls-4, .cls-5 {
+                            fill: #fff;
+                        }
+
+                        .cls-3 {
+                            opacity: 0.4;
+                        }
+
+                        .cls-4 {
+                            opacity: 0.7;
+                        }
+
+                        .cls-5 {
+                            opacity: 0.15;
+                        }
+                    </style>
+                    <clipPath id="clip-iPhone_X_XS_11_Pro_71">
+                        <rect width="332" height="313"/>
+                    </clipPath>
+                </defs>
+                <g id="iPhone_X_XS_11_Pro_71" data-name="iPhone X/XS/11 Pro – 71" class="cls-1">
+                    <g id="Gruppe_75" data-name="Gruppe 75" class="cls-2" transform="translate(-517 -369)">
+                        <circle id="Ellipse_907" data-name="Ellipse 907" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(696.673 424.977) rotate(135)"/>
+                        <circle id="Ellipse_908" data-name="Ellipse 908" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(696.673 615.316) rotate(135)"/>
+                        <circle id="Ellipse_909" data-name="Ellipse 909" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(615.639 547.473) rotate(135)"/>
+                        <circle id="Ellipse_910" data-name="Ellipse 910" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(772.055 547.473) rotate(135)"/>
+                        <circle id="Ellipse_911" data-name="Ellipse 911" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(740.018 482.455) rotate(135)"/>
+                        <circle id="Ellipse_912" data-name="Ellipse 912" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(649.561 482.455) rotate(135)"/>
+                        <circle id="Ellipse_913" data-name="Ellipse 913" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(649.561 601.182) rotate(135)"/>
+                        <circle id="Ellipse_914" data-name="Ellipse 914" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(740.018 601.182) rotate(135)"/>
+                        <circle id="Ellipse_915" data-name="Ellipse 915" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(671.232 453.246) rotate(135)"/>
+                        <circle id="Ellipse_916" data-name="Ellipse 916" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(720.23 453.246) rotate(135)"/>
+                        <circle id="Ellipse_917" data-name="Ellipse 917" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(628.831 515.436) rotate(135)"/>
+                        <circle id="Ellipse_918" data-name="Ellipse 918" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(760.747 515.436) rotate(135)"/>
+                        <circle id="Ellipse_919" data-name="Ellipse 919" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(760.747 578.566) rotate(135)"/>
+                        <circle id="Ellipse_920" data-name="Ellipse 920" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(625.062 578.566) rotate(135)"/>
+                        <circle id="Ellipse_921" data-name="Ellipse 921" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(696.51 477.266) rotate(135)"/>
+                        <circle id="Ellipse_922" data-name="Ellipse 922" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(674.602 503.906) rotate(135)"/>
+                        <circle id="Ellipse_923" data-name="Ellipse 923" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(717.422 503.906) rotate(135)"/>
+                        <circle id="Ellipse_924" data-name="Ellipse 924" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(657.673 532.451) rotate(135)"/>
+                        <circle id="Ellipse_925" data-name="Ellipse 925" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(734.352 532.451) rotate(135)"/>
+                        <circle id="Ellipse_926" data-name="Ellipse 926" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(731.352 564.977) rotate(135)"/>
+                        <circle id="Ellipse_927" data-name="Ellipse 927" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(696.511 580.977) rotate(135)"/>
+                        <circle id="Ellipse_928" data-name="Ellipse 928" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(663.674 564.977) rotate(135)"/>
+                        <circle id="Ellipse_929" data-name="Ellipse 929" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(692.673 394.977) rotate(135)"/>
+                        <circle id="Ellipse_930" data-name="Ellipse 930" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(617.673 457.977) rotate(135)"/>
+                        <circle id="Ellipse_931" data-name="Ellipse 931" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(569.673 550.977) rotate(135)"/>
+                        <circle id="Ellipse_932" data-name="Ellipse 932" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(620.673 646.977) rotate(135)"/>
+                        <circle id="Ellipse_933" data-name="Ellipse 933" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(755.674 646.977) rotate(135)"/>
+                        <circle id="Ellipse_934" data-name="Ellipse 934" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(816.674 550.977) rotate(135)"/>
+                        <circle id="Ellipse_935" data-name="Ellipse 935" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(773.674 457.977) rotate(135)"/>
+                    </g>
+                </g>
+            </svg>
+            <p id="poolValue">Good</p>
+            <h3>Temperatur</h3>
+            <div class="background-gradient"></div>
+        </div>
+
+        <div class="space-between-first">
+            <h2>DRAUSSEN</h2>
+            <h1 id="temperaturecC">27</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="332" height="313"
+                 viewBox="0 0 332 313">
+                <defs>
+                    <style>
+                        .cls-1 {
+                            clip-path: url(#clip-iPhone_X_XS_11_Pro_71);
+                        }
+
+                        .cls-2 {
+                            opacity: 0.75;
+                        }
+
+                        .cls-3, .cls-4, .cls-5 {
+                            fill: #fff;
+                        }
+
+                        .cls-3 {
+                            opacity: 0.4;
+                        }
+
+                        .cls-4 {
+                            opacity: 0.7;
+                        }
+
+                        .cls-5 {
+                            opacity: 0.15;
+                        }
+                    </style>
+                    <clipPath id="clip-iPhone_X_XS_11_Pro_71">
+                        <rect width="332" height="313"/>
+                    </clipPath>
+                </defs>
+                <g id="iPhone_X_XS_11_Pro_71" data-name="iPhone X/XS/11 Pro – 71" class="cls-1">
+                    <g id="Gruppe_75" data-name="Gruppe 75" class="cls-2" transform="translate(-517 -369)">
+                        <circle id="Ellipse_907" data-name="Ellipse 907" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(696.673 424.977) rotate(135)"/>
+                        <circle id="Ellipse_908" data-name="Ellipse 908" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(696.673 615.316) rotate(135)"/>
+                        <circle id="Ellipse_909" data-name="Ellipse 909" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(615.639 547.473) rotate(135)"/>
+                        <circle id="Ellipse_910" data-name="Ellipse 910" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(772.055 547.473) rotate(135)"/>
+                        <circle id="Ellipse_911" data-name="Ellipse 911" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(740.018 482.455) rotate(135)"/>
+                        <circle id="Ellipse_912" data-name="Ellipse 912" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(649.561 482.455) rotate(135)"/>
+                        <circle id="Ellipse_913" data-name="Ellipse 913" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(649.561 601.182) rotate(135)"/>
+                        <circle id="Ellipse_914" data-name="Ellipse 914" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(740.018 601.182) rotate(135)"/>
+                        <circle id="Ellipse_915" data-name="Ellipse 915" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(671.232 453.246) rotate(135)"/>
+                        <circle id="Ellipse_916" data-name="Ellipse 916" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(720.23 453.246) rotate(135)"/>
+                        <circle id="Ellipse_917" data-name="Ellipse 917" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(628.831 515.436) rotate(135)"/>
+                        <circle id="Ellipse_918" data-name="Ellipse 918" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(760.747 515.436) rotate(135)"/>
+                        <circle id="Ellipse_919" data-name="Ellipse 919" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(760.747 578.566) rotate(135)"/>
+                        <circle id="Ellipse_920" data-name="Ellipse 920" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(625.062 578.566) rotate(135)"/>
+                        <circle id="Ellipse_921" data-name="Ellipse 921" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(696.51 477.266) rotate(135)"/>
+                        <circle id="Ellipse_922" data-name="Ellipse 922" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(674.602 503.906) rotate(135)"/>
+                        <circle id="Ellipse_923" data-name="Ellipse 923" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(717.422 503.906) rotate(135)"/>
+                        <circle id="Ellipse_924" data-name="Ellipse 924" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(657.673 532.451) rotate(135)"/>
+                        <circle id="Ellipse_925" data-name="Ellipse 925" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(734.352 532.451) rotate(135)"/>
+                        <circle id="Ellipse_926" data-name="Ellipse 926" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(731.352 564.977) rotate(135)"/>
+                        <circle id="Ellipse_927" data-name="Ellipse 927" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(696.511 580.977) rotate(135)"/>
+                        <circle id="Ellipse_928" data-name="Ellipse 928" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(663.674 564.977) rotate(135)"/>
+                        <circle id="Ellipse_929" data-name="Ellipse 929" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(692.673 394.977) rotate(135)"/>
+                        <circle id="Ellipse_930" data-name="Ellipse 930" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(617.673 457.977) rotate(135)"/>
+                        <circle id="Ellipse_931" data-name="Ellipse 931" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(569.673 550.977) rotate(135)"/>
+                        <circle id="Ellipse_932" data-name="Ellipse 932" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(620.673 646.977) rotate(135)"/>
+                        <circle id="Ellipse_933" data-name="Ellipse 933" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(755.674 646.977) rotate(135)"/>
+                        <circle id="Ellipse_934" data-name="Ellipse 934" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(816.674 550.977) rotate(135)"/>
+                        <circle id="Ellipse_935" data-name="Ellipse 935" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(773.674 457.977) rotate(135)"/>
+                    </g>
+                </g>
+            </svg>
+            <p id="OutdoorValue">--</p>
+            <h3>Temperatur</h3>
+            <div class="background-gradient"></div>
+        </div>
+
+        <div class="space-between" id="solar">
+            <h2>SOLAR</h2>
+            <h1 id="temperaturecCc">30.1</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="332" height="313"
+                 viewBox="0 0 332 313">
+                <defs>
+                    <style>
+                        .cls-1 {
+                            clip-path: url(#clip-iPhone_X_XS_11_Pro_71);
+                        }
+
+                        .cls-2 {
+                            opacity: 0.75;
+                        }
+
+                        .cls-3, .cls-4, .cls-5 {
+                            fill: #fff;
+                        }
+
+                        .cls-3 {
+                            opacity: 0.4;
+                        }
+
+                        .cls-4 {
+                            opacity: 0.7;
+                        }
+
+                        .cls-5 {
+                            opacity: 0.15;
+                        }
+                    </style>
+                    <clipPath id="clip-iPhone_X_XS_11_Pro_71">
+                        <rect width="332" height="313"/>
+                    </clipPath>
+                </defs>
+                <g id="iPhone_X_XS_11_Pro_71" data-name="iPhone X/XS/11 Pro – 71" class="cls-1">
+                    <g id="Gruppe_75" data-name="Gruppe 75" class="cls-2" transform="translate(-517 -369)">
+                        <circle id="Ellipse_907" data-name="Ellipse 907" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(696.673 424.977) rotate(135)"/>
+                        <circle id="Ellipse_908" data-name="Ellipse 908" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(696.673 615.316) rotate(135)"/>
+                        <circle id="Ellipse_909" data-name="Ellipse 909" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(615.639 547.473) rotate(135)"/>
+                        <circle id="Ellipse_910" data-name="Ellipse 910" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(772.055 547.473) rotate(135)"/>
+                        <circle id="Ellipse_911" data-name="Ellipse 911" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(740.018 482.455) rotate(135)"/>
+                        <circle id="Ellipse_912" data-name="Ellipse 912" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(649.561 482.455) rotate(135)"/>
+                        <circle id="Ellipse_913" data-name="Ellipse 913" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(649.561 601.182) rotate(135)"/>
+                        <circle id="Ellipse_914" data-name="Ellipse 914" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(740.018 601.182) rotate(135)"/>
+                        <circle id="Ellipse_915" data-name="Ellipse 915" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(671.232 453.246) rotate(135)"/>
+                        <circle id="Ellipse_916" data-name="Ellipse 916" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(720.23 453.246) rotate(135)"/>
+                        <circle id="Ellipse_917" data-name="Ellipse 917" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(628.831 515.436) rotate(135)"/>
+                        <circle id="Ellipse_918" data-name="Ellipse 918" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(760.747 515.436) rotate(135)"/>
+                        <circle id="Ellipse_919" data-name="Ellipse 919" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(760.747 578.566) rotate(135)"/>
+                        <circle id="Ellipse_920" data-name="Ellipse 920" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(625.062 578.566) rotate(135)"/>
+                        <circle id="Ellipse_921" data-name="Ellipse 921" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(696.51 477.266) rotate(135)"/>
+                        <circle id="Ellipse_922" data-name="Ellipse 922" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(674.602 503.906) rotate(135)"/>
+                        <circle id="Ellipse_923" data-name="Ellipse 923" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(717.422 503.906) rotate(135)"/>
+                        <circle id="Ellipse_924" data-name="Ellipse 924" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(657.673 532.451) rotate(135)"/>
+                        <circle id="Ellipse_925" data-name="Ellipse 925" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(734.352 532.451) rotate(135)"/>
+                        <circle id="Ellipse_926" data-name="Ellipse 926" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(731.352 564.977) rotate(135)"/>
+                        <circle id="Ellipse_927" data-name="Ellipse 927" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(696.511 580.977) rotate(135)"/>
+                        <circle id="Ellipse_928" data-name="Ellipse 928" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(663.674 564.977) rotate(135)"/>
+                        <circle id="Ellipse_929" data-name="Ellipse 929" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(692.673 394.977) rotate(135)"/>
+                        <circle id="Ellipse_930" data-name="Ellipse 930" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(617.673 457.977) rotate(135)"/>
+                        <circle id="Ellipse_931" data-name="Ellipse 931" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(569.673 550.977) rotate(135)"/>
+                        <circle id="Ellipse_932" data-name="Ellipse 932" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(620.673 646.977) rotate(135)"/>
+                        <circle id="Ellipse_933" data-name="Ellipse 933" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(755.674 646.977) rotate(135)"/>
+                        <circle id="Ellipse_934" data-name="Ellipse 934" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(816.674 550.977) rotate(135)"/>
+                        <circle id="Ellipse_935" data-name="Ellipse 935" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(773.674 457.977) rotate(135)"/>
+                    </g>
+                </g>
+            </svg>
+            <p id="SolarValue">--</p>
+            <h3>Temperatur</h3>
+            <div class="background-gradient"></div>
+        </div>
+
+        <div class="deactivated-Card">
+            <h2>CHLOR</h2>
+            <h1>-</h1>
+            <p>-</p>
+            <h3>-</h3>
+            <div class="background-gradient"></div>
+        </div>
+    </div>
+</div>
+
+<div class="outer-box" id="control-box">
+    <div id="content2">
+        <div class="first-two">
+            <h2>PUMPE</h2>
+            <h1 id="ON">AUS</h1>
+            <p class="timer" id="OnTimer">00:00:00</p>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="332" height="313"
+                 viewBox="0 0 332 313">
+                <defs>
+                    <style>
+                        .cls-1 {
+                            clip-path: url(#clip-iPhone_X_XS_11_Pro_71);
+                        }
+
+                        .cls-2 {
+                            opacity: 0.75;
+                        }
+
+                        .cls-3, .cls-4, .cls-5 {
+                            fill: #fff;
+                        }
+
+                        .cls-3 {
+                            opacity: 0.4;
+                        }
+
+                        .cls-4 {
+                            opacity: 0.7;
+                        }
+
+                        .cls-5 {
+                            opacity: 0.15;
+                        }
+                    </style>
+                    <clipPath id="clip-iPhone_X_XS_11_Pro_71">
+                        <rect width="332" height="313"/>
+                    </clipPath>
+                </defs>
+                <g id="iPhone_X_XS_11_Pro_71" data-name="iPhone X/XS/11 Pro – 71" class="cls-1">
+                    <g id="Gruppe_75" data-name="Gruppe 75" class="cls-2" transform="translate(-517 -369)">
+                        <circle id="Ellipse_907" data-name="Ellipse 907" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(696.673 424.977) rotate(135)"/>
+                        <circle id="Ellipse_908" data-name="Ellipse 908" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(696.673 615.316) rotate(135)"/>
+                        <circle id="Ellipse_909" data-name="Ellipse 909" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(615.639 547.473) rotate(135)"/>
+                        <circle id="Ellipse_910" data-name="Ellipse 910" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(772.055 547.473) rotate(135)"/>
+                        <circle id="Ellipse_911" data-name="Ellipse 911" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(740.018 482.455) rotate(135)"/>
+                        <circle id="Ellipse_912" data-name="Ellipse 912" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(649.561 482.455) rotate(135)"/>
+                        <circle id="Ellipse_913" data-name="Ellipse 913" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(649.561 601.182) rotate(135)"/>
+                        <circle id="Ellipse_914" data-name="Ellipse 914" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(740.018 601.182) rotate(135)"/>
+                        <circle id="Ellipse_915" data-name="Ellipse 915" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(671.232 453.246) rotate(135)"/>
+                        <circle id="Ellipse_916" data-name="Ellipse 916" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(720.23 453.246) rotate(135)"/>
+                        <circle id="Ellipse_917" data-name="Ellipse 917" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(628.831 515.436) rotate(135)"/>
+                        <circle id="Ellipse_918" data-name="Ellipse 918" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(760.747 515.436) rotate(135)"/>
+                        <circle id="Ellipse_919" data-name="Ellipse 919" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(760.747 578.566) rotate(135)"/>
+                        <circle id="Ellipse_920" data-name="Ellipse 920" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(625.062 578.566) rotate(135)"/>
+                        <circle id="Ellipse_921" data-name="Ellipse 921" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(696.51 477.266) rotate(135)"/>
+                        <circle id="Ellipse_922" data-name="Ellipse 922" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(674.602 503.906) rotate(135)"/>
+                        <circle id="Ellipse_923" data-name="Ellipse 923" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(717.422 503.906) rotate(135)"/>
+                        <circle id="Ellipse_924" data-name="Ellipse 924" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(657.673 532.451) rotate(135)"/>
+                        <circle id="Ellipse_925" data-name="Ellipse 925" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(734.352 532.451) rotate(135)"/>
+                        <circle id="Ellipse_926" data-name="Ellipse 926" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(731.352 564.977) rotate(135)"/>
+                        <circle id="Ellipse_927" data-name="Ellipse 927" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(696.511 580.977) rotate(135)"/>
+                        <circle id="Ellipse_928" data-name="Ellipse 928" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(663.674 564.977) rotate(135)"/>
+                        <circle id="Ellipse_929" data-name="Ellipse 929" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(692.673 394.977) rotate(135)"/>
+                        <circle id="Ellipse_930" data-name="Ellipse 930" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(617.673 457.977) rotate(135)"/>
+                        <circle id="Ellipse_931" data-name="Ellipse 931" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(569.673 550.977) rotate(135)"/>
+                        <circle id="Ellipse_932" data-name="Ellipse 932" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(620.673 646.977) rotate(135)"/>
+                        <circle id="Ellipse_933" data-name="Ellipse 933" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(755.674 646.977) rotate(135)"/>
+                        <circle id="Ellipse_934" data-name="Ellipse 934" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(816.674 550.977) rotate(135)"/>
+                        <circle id="Ellipse_935" data-name="Ellipse 935" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(773.674 457.977) rotate(135)"/>
+                    </g>
+                </g>
+            </svg>
+            <div class="background-gradient"></div>
+            <div class="checkbox">
+                <p class="on" id="on1" onclick="buttonOn(this.id); counter(this.id)">Eingeschaltet</p>
+                <p class="off" id="off1" onclick="buttonOff(this.id); stopCounter(this.id)">Ausgeschaltet</p>
+                <div class="inner-checkbox" id="test"></div>
+            </div>
+        </div>
+
+        <div class="space-between-first-two">
+            <h2>WARMWASSER</h2>
+            <h1 id="ON-2">AUS</h1>
+            <p class="timer" id="OnTimer2">00:00:00</p>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="332" height="313"
+                 viewBox="0 0 332 313">
+                <defs>
+                    <style>
+                        .cls-1 {
+                            clip-path: url(#clip-iPhone_X_XS_11_Pro_71);
+                        }
+
+                        .cls-2 {
+                            opacity: 0.75;
+                        }
+
+                        .cls-3, .cls-4, .cls-5 {
+                            fill: #fff;
+                        }
+
+                        .cls-3 {
+                            opacity: 0.4;
+                        }
+
+                        .cls-4 {
+                            opacity: 0.7;
+                        }
+
+                        .cls-5 {
+                            opacity: 0.15;
+                        }
+                    </style>
+                    <clipPath id="clip-iPhone_X_XS_11_Pro_71">
+                        <rect width="332" height="313"/>
+                    </clipPath>
+                </defs>
+                <g id="iPhone_X_XS_11_Pro_71" data-name="iPhone X/XS/11 Pro – 71" class="cls-1">
+                    <g id="Gruppe_75" data-name="Gruppe 75" class="cls-2" transform="translate(-517 -369)">
+                        <circle id="Ellipse_907" data-name="Ellipse 907" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(696.673 424.977) rotate(135)"/>
+                        <circle id="Ellipse_908" data-name="Ellipse 908" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(696.673 615.316) rotate(135)"/>
+                        <circle id="Ellipse_909" data-name="Ellipse 909" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(615.639 547.473) rotate(135)"/>
+                        <circle id="Ellipse_910" data-name="Ellipse 910" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(772.055 547.473) rotate(135)"/>
+                        <circle id="Ellipse_911" data-name="Ellipse 911" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(740.018 482.455) rotate(135)"/>
+                        <circle id="Ellipse_912" data-name="Ellipse 912" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(649.561 482.455) rotate(135)"/>
+                        <circle id="Ellipse_913" data-name="Ellipse 913" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(649.561 601.182) rotate(135)"/>
+                        <circle id="Ellipse_914" data-name="Ellipse 914" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(740.018 601.182) rotate(135)"/>
+                        <circle id="Ellipse_915" data-name="Ellipse 915" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(671.232 453.246) rotate(135)"/>
+                        <circle id="Ellipse_916" data-name="Ellipse 916" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(720.23 453.246) rotate(135)"/>
+                        <circle id="Ellipse_917" data-name="Ellipse 917" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(628.831 515.436) rotate(135)"/>
+                        <circle id="Ellipse_918" data-name="Ellipse 918" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(760.747 515.436) rotate(135)"/>
+                        <circle id="Ellipse_919" data-name="Ellipse 919" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(760.747 578.566) rotate(135)"/>
+                        <circle id="Ellipse_920" data-name="Ellipse 920" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(625.062 578.566) rotate(135)"/>
+                        <circle id="Ellipse_921" data-name="Ellipse 921" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(696.51 477.266) rotate(135)"/>
+                        <circle id="Ellipse_922" data-name="Ellipse 922" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(674.602 503.906) rotate(135)"/>
+                        <circle id="Ellipse_923" data-name="Ellipse 923" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(717.422 503.906) rotate(135)"/>
+                        <circle id="Ellipse_924" data-name="Ellipse 924" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(657.673 532.451) rotate(135)"/>
+                        <circle id="Ellipse_925" data-name="Ellipse 925" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(734.352 532.451) rotate(135)"/>
+                        <circle id="Ellipse_926" data-name="Ellipse 926" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(731.352 564.977) rotate(135)"/>
+                        <circle id="Ellipse_927" data-name="Ellipse 927" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(696.511 580.977) rotate(135)"/>
+                        <circle id="Ellipse_928" data-name="Ellipse 928" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(663.674 564.977) rotate(135)"/>
+                        <circle id="Ellipse_929" data-name="Ellipse 929" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(692.673 394.977) rotate(135)"/>
+                        <circle id="Ellipse_930" data-name="Ellipse 930" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(617.673 457.977) rotate(135)"/>
+                        <circle id="Ellipse_931" data-name="Ellipse 931" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(569.673 550.977) rotate(135)"/>
+                        <circle id="Ellipse_932" data-name="Ellipse 932" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(620.673 646.977) rotate(135)"/>
+                        <circle id="Ellipse_933" data-name="Ellipse 933" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(755.674 646.977) rotate(135)"/>
+                        <circle id="Ellipse_934" data-name="Ellipse 934" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(816.674 550.977) rotate(135)"/>
+                        <circle id="Ellipse_935" data-name="Ellipse 935" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(773.674 457.977) rotate(135)"/>
+                    </g>
+                </g>
+            </svg>
+            <div class="background-gradient"></div>
+            <div class="checkbox">
+                <p class="on" id="on2" onclick="buttonOn(this.id); counter(this.id)">Eingeschaltet</p>
+                <p class="off" id="off2" onclick="buttonOff(this.id); stopCounter(this.id)">Ausgeschaltet</p>
+                <div class="inner-checkbox" id="test2"></div>
+            </div>
+        </div>
+
+        <div class="space-between-two critical">
+            <h2>AMBIENTLICHT</h2>
+            <h1 id="ON-3">AUS</h1>
+            <p class="timer" id="OnTimer3">00:00:00</p>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="332" height="313"
+                 viewBox="0 0 332 313">
+                <defs>
+                    <style>
+                        .cls-1 {
+                            clip-path: url(#clip-iPhone_X_XS_11_Pro_71);
+                        }
+
+                        .cls-2 {
+                            opacity: 0.75;
+                        }
+
+                        .cls-3, .cls-4, .cls-5 {
+                            fill: #fff;
+                        }
+
+                        .cls-3 {
+                            opacity: 0.4;
+                        }
+
+                        .cls-4 {
+                            opacity: 0.7;
+                        }
+
+                        .cls-5 {
+                            opacity: 0.15;
+                        }
+                    </style>
+                    <clipPath id="clip-iPhone_X_XS_11_Pro_71">
+                        <rect width="332" height="313"/>
+                    </clipPath>
+                </defs>
+                <g id="iPhone_X_XS_11_Pro_71" data-name="iPhone X/XS/11 Pro – 71" class="cls-1">
+                    <g id="Gruppe_75" data-name="Gruppe 75" class="cls-2" transform="translate(-517 -369)">
+                        <circle id="Ellipse_907" data-name="Ellipse 907" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(696.673 424.977) rotate(135)"/>
+                        <circle id="Ellipse_908" data-name="Ellipse 908" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(696.673 615.316) rotate(135)"/>
+                        <circle id="Ellipse_909" data-name="Ellipse 909" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(615.639 547.473) rotate(135)"/>
+                        <circle id="Ellipse_910" data-name="Ellipse 910" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(772.055 547.473) rotate(135)"/>
+                        <circle id="Ellipse_911" data-name="Ellipse 911" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(740.018 482.455) rotate(135)"/>
+                        <circle id="Ellipse_912" data-name="Ellipse 912" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(649.561 482.455) rotate(135)"/>
+                        <circle id="Ellipse_913" data-name="Ellipse 913" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(649.561 601.182) rotate(135)"/>
+                        <circle id="Ellipse_914" data-name="Ellipse 914" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(740.018 601.182) rotate(135)"/>
+                        <circle id="Ellipse_915" data-name="Ellipse 915" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(671.232 453.246) rotate(135)"/>
+                        <circle id="Ellipse_916" data-name="Ellipse 916" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(720.23 453.246) rotate(135)"/>
+                        <circle id="Ellipse_917" data-name="Ellipse 917" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(628.831 515.436) rotate(135)"/>
+                        <circle id="Ellipse_918" data-name="Ellipse 918" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(760.747 515.436) rotate(135)"/>
+                        <circle id="Ellipse_919" data-name="Ellipse 919" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(760.747 578.566) rotate(135)"/>
+                        <circle id="Ellipse_920" data-name="Ellipse 920" class="cls-3" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(625.062 578.566) rotate(135)"/>
+                        <circle id="Ellipse_921" data-name="Ellipse 921" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(696.51 477.266) rotate(135)"/>
+                        <circle id="Ellipse_922" data-name="Ellipse 922" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(674.602 503.906) rotate(135)"/>
+                        <circle id="Ellipse_923" data-name="Ellipse 923" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(717.422 503.906) rotate(135)"/>
+                        <circle id="Ellipse_924" data-name="Ellipse 924" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(657.673 532.451) rotate(135)"/>
+                        <circle id="Ellipse_925" data-name="Ellipse 925" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(734.352 532.451) rotate(135)"/>
+                        <circle id="Ellipse_926" data-name="Ellipse 926" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(731.352 564.977) rotate(135)"/>
+                        <circle id="Ellipse_927" data-name="Ellipse 927" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(696.511 580.977) rotate(135)"/>
+                        <circle id="Ellipse_928" data-name="Ellipse 928" class="cls-4" cx="9.932" cy="9.932" r="9.932"
+                                transform="translate(663.674 564.977) rotate(135)"/>
+                        <circle id="Ellipse_929" data-name="Ellipse 929" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(692.673 394.977) rotate(135)"/>
+                        <circle id="Ellipse_930" data-name="Ellipse 930" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(617.673 457.977) rotate(135)"/>
+                        <circle id="Ellipse_931" data-name="Ellipse 931" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(569.673 550.977) rotate(135)"/>
+                        <circle id="Ellipse_932" data-name="Ellipse 932" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(620.673 646.977) rotate(135)"/>
+                        <circle id="Ellipse_933" data-name="Ellipse 933" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(755.674 646.977) rotate(135)"/>
+                        <circle id="Ellipse_934" data-name="Ellipse 934" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(816.674 550.977) rotate(135)"/>
+                        <circle id="Ellipse_935" data-name="Ellipse 935" class="cls-5" cx="7.5" cy="7.5" r="7.5"
+                                transform="translate(773.674 457.977) rotate(135)"/>
+                    </g>
+                </g>
+            </svg>
+            <div class="background-gradient"></div>
+            <div class="checkbox">
+                <p class="on" id="on3" onclick="buttonOn(this.id); counter(this.id)">Eingeschaltet</p>
+                <p class="off" id="off3" onclick="buttonOff(this.id); stopCounter(this.id)">Ausgeschaltet</p>
+                <div class="inner-checkbox" id="test3"></div>
+            </div>
+        </div>
+
+        <div class="deactivated-Card">
+            <h2>CHLOR</h2>
+            <h1>OFF</h1>
+            <p class="timer">00:00:00</p>
+            <div class="background-gradient"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
