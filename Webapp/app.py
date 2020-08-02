@@ -29,11 +29,13 @@ def read_sensor():
     temp_one = str(readTempLines(sensor)[0])
     return(temp_one)
 
+@app.route('/getDataFromSensor2')
 def read_sensor_two():
     temp_two = readTempSensor(sensor2)
     temp_two = str(readTempLines(sensor2)[0])
     return(temp_two)
 
+@app.route('/getDataFromSensor3')
 def read_sensor_three():
     temp_three = readTempSensor(sensor3)
     temp_three = str(readTempLines(sensor3)[0])
