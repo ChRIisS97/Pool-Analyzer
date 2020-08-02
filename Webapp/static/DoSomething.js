@@ -1,8 +1,10 @@
 $(document).ready(function () {
-    setInterval("loadValues()", 5000)
+    setInterval("loadValues()", 3000)
 });
 function loadValues(){
-    $("temperaturec").load("/myStatus");
+    $("temperaturec").load("/getDataFromSensor");
+    $("temperaturecC").load("/getDataFromSensor2");
+    $("temperaturecCc").load("/getDataFromSensor3");
 }
 
 setInterval(function () {
