@@ -5,13 +5,13 @@
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
 
 
-![alt text](https://github.com/ChRIisS97/Pool-Analyzer/blob/master/Harmony.png)
+![alt text](https://github.com/ChRIisS97/Pool-Analyzer/blob/master/Pictures/Harmony.png)
 
-![alt text](https://github.com/ChRIisS97/Pool-Analyzer/blob/master/Harmony2.png)
+![alt text](https://github.com/ChRIisS97/Pool-Analyzer/blob/master/Pictures/Harmony2.png)
 
 <br><br><br><p align="center">Live Example of the upcoming Version</p>
 
-![alt text](https://github.com/ChRIisS97/Pool-Analyzer/blob/master/Screenshot%20(36).png)
+![alt text](https://github.com/ChRIisS97/Pool-Analyzer/blob/master/Pictures/Screenshot%20(36).png)
 
 **still in process and receive changes**
 
