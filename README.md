@@ -28,33 +28,33 @@ Software used
 <br>
 
 # How to - Pre installation 
-> 1 - Download **Raspbian OS** (Lite OR Default)
+> 1 - Download **Raspbian OS** (Lite OR Default) [RaspberryPi.org](https://www.raspberrypi.org/downloads/)
 ```
 https://www.raspberrypi.org/downloads/
 ```
 
-> 2 - install **Python**
+> 2 - install **Python** [Python Website](https://www.python.org/downloads/)
 ```ruby
 sudo apt install python3 idle3
 ```
 
-> 3 - install **Pip** (Not required for Raspbian OS Default)
+> 3 - install **Pip** (Not required for Raspbian OS Default) [Pip Manager](https://www.raspberrypi.org/documentation/linux/software/python.md)
 ```ruby
 For Python3 -> sudo apt install python3-pip 
 For Python2 -> sudo apt install python-pip
 ```
 
-> 4 - Download Pool-Analyzer Zip
+> 4 - Download Pool-Analyzer Zip [PoolAnalyzer Zip](https://github.com/ChRIisS97/Pool-Analyzer)
 ```
 Download Pool-Analyzer und unzip it 
 ```
 
-> 5 - Go into dictionary **Webapp** and run
+> 5 - Go into dictionary **Webapp** and run [Flask Framework](https://palletsprojects.com/p/flask/)
 ```ruby
 Pip install flask 
 ```
 
-> 6 - put your temperature sensors in file ds18b20.py
+> 6 - put your temperature sensors in file ds18b20.py [Connect Sensors](https://raspberryautomation.com/connect-multiple-ds18b20-temperature-sensors-to-a-raspberry-pi/)
 ```
 First look for your sensornames
 https://raspberryautomation.com/connect-multiple-ds18b20-temperature-sensors-to-a-raspberry-pi/
@@ -73,6 +73,8 @@ sensor3 = 'your path to the third sensor3'
 ```ruby
 Go into Webapp and run -> python app.py
 ```
+
+<br> 
 
 # Authors
 > **Christopher Himann** - *Initial work* - *Further development* - 
