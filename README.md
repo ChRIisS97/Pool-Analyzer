@@ -9,17 +9,73 @@
 
 ![alt text](https://github.com/ChRIisS97/Pool-Analyzer/blob/master/Pictures/Harmony2.png)
 
-<br><br><br><p align="center">Live Example of the upcoming Version</p>
-
 ![alt text](https://github.com/ChRIisS97/Pool-Analyzer/blob/master/Pictures/Screenshot%20(36).png)
 
-**still in process and receive changes**
-
 # components
-> coming soon
+```
+Hardware used
+> Raspberry Pi with Raspbian OS (Lite/Desktop)
+> ds18b20 (Temperature sensor)
+> Outdoor case
+> pH/Chlorine/Conductivity sensor (Coming soon)
+
+Software used
+> Python (latest release)
+> Pip (Packagemanager for Python)
+> Flask (Server application)
+```
+
+<br>
+
+# How to - Pre installation 
+> 1 - Download **Raspbian OS** (Lite OR Default)
+```
+https://www.raspberrypi.org/downloads/
+```
+
+> 2 - install **Python**
+```ruby
+sudo apt install python3 idle3
+```
+
+> 3 - install **Pip** (Not required for Raspbian OS Default)
+```ruby
+For Python3 -> sudo apt install python3-pip 
+For Python2 -> sudo apt install python-pip
+```
+
+> 4 - Download Pool-Analyzer Zip
+```
+Download Pool-Analyzer und unzip it 
+```
+
+> 5 - Go into dictionary **Webapp** and run
+```ruby
+Pip install flask 
+```
+
+> 6 - put your temperature sensors in file ds18b20.py
+```
+First look for your sensornames
+https://raspberryautomation.com/connect-multiple-ds18b20-temperature-sensors-to-a-raspberry-pi/
+```
+```ruby
+Put your path for each sensornames in one variable 
+sensor = '/sys/bus/w1/devices/28-02069177028a/w1_slave' - example
+sensor2 = 'your path to the second sensor2'
+sensor3 = 'your path to the third sensor3'
+```
+
+<br>
+
+# How to - Start App 
+> 1 - Then run this comand in your commandline
+```ruby
+Go into Webapp and run -> python app.py
+```
 
 # Authors
-> **Christopher Himann** - *Initial work* - 
+> **Christopher Himann** - *Initial work* - *Further development* - 
 
 # License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
