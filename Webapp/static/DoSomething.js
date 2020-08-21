@@ -1,10 +1,17 @@
+
 $(document).ready(function () {
-    setInterval("loadValues()", 3000)
+    setInterval("ajaxd()", 3000)
 });
-function loadValues(){
-    $("temperaturec").load("/getDataFromSensor");
-    $("temperaturecC").load("/getDataFromSensor2");
-    $("temperaturecCc").load("/getDataFromSensor3");
+function ajaxd(){
+    $.get('getDataFromSensor', function (data) {
+        document.getElementById("temperaturec").innerHTML = data;
+    });
+    $.get('getDataFromSensor2', function (data) {
+        document.getElementById("temperaturecC").innerHTML = data;
+    });
+    $.get('getDataFromSensor3', function (data) {
+        document.getElementById("temperaturecCc").innerHTML = data;
+    });
 }
 
 setInterval(function () {
