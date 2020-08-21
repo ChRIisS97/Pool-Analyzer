@@ -188,7 +188,8 @@ a.active, a:hover {
 svg {
     position: absolute;
     top: 15%;
-    left: 10%;
+    width: 100%;
+    left: 0;
     animation: breathe 7s ease-out infinite;
     z-index: 0;
 }
@@ -217,6 +218,7 @@ svg {
 
 .first, .first-two {
     margin-left: 80px;
+    position: relative;
 }
 
 .space-between-first, .space-between-first-two {
@@ -242,6 +244,8 @@ svg {
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0 3px 30px rgba(0, 0, 0, 0);
+    font-size: 1vw;
+    font-family: 'Poppins', sans-serif;
 }
 .inner-checkbox{
     position: absolute;
@@ -261,7 +265,7 @@ svg {
     left: 10%;
     color: white;
     z-index: 1;
-    font-family: 'Poppins', sans-serif;
+
 }
 .off{
     position: absolute;
@@ -269,7 +273,6 @@ svg {
     right: 10%;
     color: white;
     z-index: 1;
-    font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
 @media (max-width: 1160px) {
@@ -277,7 +280,7 @@ svg {
         font-size: 16px;
         padding: 7px 40px;
     }
-    #content > div {
+    #content > div, #content2 > div {
         width: 325px;
         height: 100%;
     }
@@ -287,6 +290,13 @@ svg {
     }
     #content, #content2 {
         width: 1640px;
+    }
+    svg {
+        width: 80%;
+        left: 10%;
+    }
+    .underscore{
+        left: 40px;
     }
 }
 
@@ -349,7 +359,9 @@ svg {
     .first, .first-two{
         margin-left: 1.75%;
     }
-
+    #status{
+        display: none;
+    }
     #content > div > h1 {
         font-size: 70px;
     }
@@ -362,19 +374,15 @@ svg {
     }
     #content, #content2{
         position: absolute;
-        top: 2.5%;
-        height: 95%;
+        top: 0;
+        height: 100%;
         width: 1525px;
-    }
-    svg {
-        top: 10%;
-        left: 0;
     }
     .outer-box {
         position: absolute;
         bottom: 5%;
         left: 0;
-        top: 140px;
+        top: 75px;
         height: auto;
         background-color: transparent;
         width: 100%;
