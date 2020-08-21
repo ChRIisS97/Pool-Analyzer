@@ -318,27 +318,34 @@ svg {
 @media (max-width: 858px) {
     label.logo {
         line-height: 80px;
+        z-index: 4;
+        position: relative;
     }
 
     .checkbtn {
         display: block;
         margin-right: 40px;
+        z-index: 4;
+        position: relative;
     }
 
     ul {
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #2c3e50;
-        top: 80px;
+        background: #005c5d;
+        opacity: 0.98;
+        top: 0;
         left: -100%;
         text-align: center;
         transition: all .5s;
+        z-index: 3;
+        padding-top: 75px;
     }
 
     nav ul li {
         display: block;
-        margin: 50px 0;
+        margin: 60px 0;
         line-height: 30px;
     }
 
@@ -349,9 +356,8 @@ svg {
 
     a:hover, a.active {
         background: none;
-        color: #0082e6;
+        color: #00FFED;
     }
-
     #check:checked ~ ul {
         left: 0;
     }
@@ -362,11 +368,21 @@ svg {
     #status{
         display: none;
     }
-    #content > div > h1 {
+    .underscore{
+        left: 50%;transform: translateX(-50%);
+        bottom: -10px;
+    }
+    .on, .off{
+        font-size: 14px;
+    }
+    #content > div > h1, #content2 > div > h1 {
         font-size: 70px;
     }
     #content > div > p {
         font-size: 40px;
+    }
+    #content2 > div > p {
+        font-size: 25px;
     }
     #content > div {
         width: 325px;
